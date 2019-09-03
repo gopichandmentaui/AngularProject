@@ -75,37 +75,85 @@
     {
         "groupName": "Environmental Specifications",
         "dataGroups": [{
-                "subHeading": "Descripton",
-                "description": ["Stratix 8000 managed switch, Layers 2, 6 ports"]
+                "subHeading": "Temperature, operating",
+                "description": ["-40…+60 °C (-40…+140 °F)"]
             },
             {
-                "subHeading": "Inrush current, max",
-                "description": ["2.0 A"]
+                "subHeading": "Temperature, surrounding air, max",
+                "description": ["60 °C (140 °F)"]
             },
             {
-                "subHeading": "Power input, max",
-                "description": ["2 A max @ 18…60V DC, CL 2/SELV"]
+                "subHeading": "Temperature, nonoperating",
+                "description": ["-40…+85 °C (-40…+185 °F)"]
             },
             {
-                "subHeading": "Alarm relay, max",
-                "description": ["1 A max @ 30V DC, CL 2/SELV"]
+                "subHeading": "Relative Humidity",
+                "description": ["Relative humidity"]
             },
             {
-                "subHeading": "Power consumption, max",
-                "description": ["15.1 W"]
+                "subHeading": "Vibration",
+                "description": ["2 g @ 10…500 Hz"]
             },
             {
-                "subHeading": "Power dissipation",
-                "description": ["15.1 W"]
+                "subHeading": "Shock, operating",
+                "description": ["20 g"]
             },
             {
-                "subHeading": "Isolation voltage",
+                "subHeading": "Shock, nonoperating",
+                "description": ["20 g"]
+            },
+            {
+                "subHeading": "Emissions",
+                "description": ["Class A"]
+            },
+            {
+                "subHeading": "ESD Immunity",
+                "description": ["8 kV contact discharges", "15 kV air discharges"]
+            },
+            {
+                "subHeading": "Radiated RF Immunity",
                 "description": [
-                    "75V (continuous), basic insulation type, power to ground, power to netowrk channels, and power to alarm",
-                    "No isolation between individual Ethernet ports",
-                    "No isolation between console port and system",
-                    "Type tested at 1000V AC for 60 s"
+                    "20V/m with 1 kHz sine-wave 80% AM from 80…1000 MHz",
+                    "10V/m with 200 Hz 50% Pulse 100% AM at 900 MHz",
+                    "10V/m with 200 Hz 50% Pulse 100% AM at 1890 MHz",
+                    "10V/m with 1 kHz sine-wave 80% AM from 1000…2700 MHz"
                 ]
+            },
+            {
+                "subHeading": "EFT/B immunity",
+                "description": [
+                    "±4 kV at 2.5 kHz and ±2 kV at 5 kHz on power ports",
+                    "±4 kV at 2.5 kHz and ±2 kV at 5 kHz on alarm ports",
+                    "±4 kV at 2.5 kHz and ±2 kV at 5 kHz on Ethernet ports"
+                ]
+            },
+            {
+                "subHeading": "Surge transient immunity",
+                "description": [
+                    "±1 kV line-line (DM) and ±2 kV line-earth (CM) on power ports",
+                    "±1 kV line-line (DM) and ±2 kV line-earth (CM) on alarm ports",
+                    "±2 kV line-earth (CM) on Ethernet ports"
+                ]
+            },
+            {
+                "subHeading": "Conducted RF immunity",
+                "description": ["10V rms with 1 kHz sine-wave 80% AM from 150 kHz…80MHz"]
+            },
+            {
+                "subHeading": "Magnetic field immunity",
+                "description": ["30 A/m long duration and 300 A/m short duration at 50 Hz and 60 Hz"]
+            },
+            {
+                "subHeading": "Oscillatory surge withstand",
+                "description": ["2.5 kV"]
+            },
+            {
+                "subHeading": "Voltage variation",
+                "description": ["10 ms interruption on DC supply ports"]
+            },
+            {
+                "subHeading": "Environmental rating",
+                "description": ["IP20"]
             }
         ]
     }
