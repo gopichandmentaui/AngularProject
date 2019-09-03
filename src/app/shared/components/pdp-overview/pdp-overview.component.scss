@@ -1,0 +1,389 @@
+/*Overview Component starts*/
+
+// Convert Below css code in SCSS
+// Store colors in _colors.scss file in assets/styles/ folder
+// Store fonts in _fonts.scss file in assets/styles/ folder
+// Store global css like generic padding value, font size, generic margin value in _global.scss
+.catelog-number {
+    font-family: Barlow-Regular;
+    font-size: 36px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    line-height: 48px;
+    color: #333;
+    margin-top: 56px;
+    margin-bottom: 0;
+}
+
+@media (max-width:1024px) {
+    .catelog-number {
+        margin-top: 24px;
+    }
+}
+
+.lower-category {
+    font-family: Barlow-Regular;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 24px;
+    letter-spacing: normal;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.short-description {
+    font-family: Barlow-Regular;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 22px;
+    letter-spacing: normal;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.lifecycle-title {
+    margin-bottom: 0;
+}
+
+.lifecycle-text-width {
+    width: 100%;
+    padding-right: 15px;
+    padding-bottom: 0;
+    margin-bottom: 40px;
+}
+
+.lifecycle-status {
+    font-family: Barlow-Bold;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    color: #333;
+    padding: 0 8px 0 0;
+    vertical-align: middle;
+}
+
+label {
+    margin-bottom: 0;
+}
+
+.lifecycle-status-circle-position {
+    vertical-align: middle;
+}
+
+.lifecycle-status-circle {
+    font-size: 9px;
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border-radius: 4px;
+    color: #188030;
+}
+
+.lifecycle-status-text {
+    font-family: Barlow-Regular;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 22px;
+    letter-spacing: normal;
+    vertical-align: middle;
+    padding-left: 6px;
+    color: #333;
+    height: 22px;
+}
+
+
+/*
+
+.product-details-1st-section .quicklinks-box {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    background-color: #fff;
+}
+
+.product-details-1st-section .quicklinks-box .col-xs-12 {
+    padding-right: 3px;
+}
+
+.product-details-1st-section .quicklinks-box .quick-links-text {
+    font-family: Barlow-Regular;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 20px;
+    letter-spacing: .5px;
+    color: #333;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.product-details-1st-section .quicklinks-box .quick-links-section .rectangle-box {
+    float: left;
+    width: 141px;
+    height: 112px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .15);
+    background-color: #fff;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    padding: 16px 8px;
+    border-bottom: 2px solid #cd163f;
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) and (orientation: portrait) {
+    .product-details-1st-section .quicklinks-box .quick-links-section .rectangle-box {
+        width: 31.5%;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 320px) and (orientation: landscape) {
+    .product-details-1st-section .quicklinks-box .quick-links-section .rectangle-box {
+        width: 48.5%;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 320px) and (orientation: portrait) {
+    .product-details-1st-section .quicklinks-box .quick-links-section .rectangle-box {
+        width: 47%;
+    }
+}
+
+.product-details-1st-section .quicklinks-box .quick-links-section .rectangle-box .sr-literature-library {
+    font-size: 24px;
+    color: #333;
+    width: 24px;
+    height: 20px;
+    display: block;
+    text-align: center;
+    margin: 0 auto 13px;
+}
+
+.product-details-1st-section .quicklinks-box .quick-links-section .rectangle-box .text-links {
+    font-family: Barlow-Regular;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 22px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #43434d;
+    margin: 0 auto;
+    display: block;
+}
+
+.product-details-1st-section .quicklinks-box .quick-links-section .rectangle-box .sr-scan {
+    font-size: 31px;
+    color: #404041;
+    width: 28px;
+    height: 22px;
+    display: block;
+    text-align: center;
+    margin: 0 auto 13px;
+}
+
+.product-details-1st-section .quicklinks-box .quick-links-section .rectangle-box .sr-bill-of-materials {
+    font-size: 26px;
+    color: #404041;
+    width: 21px;
+    height: 27px;
+    display: block;
+    text-align: center;
+    margin: 0 auto 13px;
+}
+
+.product-details-1st-section .quicklinks-box .quick-links-section .rectangle-box .sr-products {
+    font-size: 24px;
+    color: #000;
+    width: 20px;
+    height: 27px;
+    display: block;
+    text-align: center;
+    margin: 0 auto 13px;
+}
+
+.product-details-1st-section .quicklinks-box .quick-links-section .rectangle-box .sr-repair-quotes {
+    font-size: 27px;
+    color: #333;
+    width: 27px;
+    height: 25px;
+    display: block;
+    text-align: center;
+    margin: 0 auto 13px;
+}
+
+.product-details-1st-section .quicklinks-box .quick-links-section .rectangle-box .sr-locator {
+    font-size: 25px;
+    color: #000;
+    width: 23px;
+    height: 25px;
+    display: block;
+    text-align: center;
+    margin: 0 auto 13px;
+}
+*/
+
+.quick-actions-box .heading {
+    font-family: Barlow-Regular;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 20px;
+    letter-spacing: .5px;
+    color: #333;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    padding-left: 0;
+}
+
+.quick-actions-box .card {
+    width: 141px;
+    height: 112px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .15);
+    background-color: #fff;
+    margin-right: 0px;
+    margin-bottom: 8px;
+    padding: 16px 8px;
+    border-bottom: 2px solid #cd163f;
+    text-decoration: none;
+    border-radius: 0;
+}
+
+.quick-actions-box {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.quick-actions-box .quick-actions-section {
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 31%;
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .quick-actions-box .quick-actions-section {
+        padding-left: 3px;
+        padding-right: 3px;
+        max-width: 100%;
+    }
+}
+
+@media (min-width:320px) and (max-width:991px) and (orientation: landscape) {
+    .quick-actions-box .quick-actions-section {
+        padding-left: 3px;
+        padding-right: 2px;
+        max-width: 100%;
+    }
+}
+
+@media (min-width:320px) and (max-width:991px) and (orientation: portrait) {
+    .quick-actions-box .quick-actions-section {
+        max-width: 100%;
+    }
+}
+
+@media (min-width:320px) and (max-width:767px) and (orientation: portrait) {
+    .quick-actions-box .quick-actions-section:nth-child(odd) {
+        padding-left: 0px;
+    }
+
+    .quick-actions-box .quick-actions-section:nth-child(even) {
+        padding-right: 6px;
+    }
+}
+
+@media (max-width:1024px) {
+    .quick-actions-box .card {
+        width: 100%;
+    }
+}
+
+.quick-actions-box .card .card-body {
+    padding: 0px;
+}
+
+.quick-actions-box .card .card-body span {
+    display: block;
+    text-align: center;
+}
+
+.quick-actions-box .card .card-body .card-footer-text {
+    font-family: Barlow-Regular;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 22px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #43434d;
+}
+
+.quick-actions-box .quick-actions-section .sr-scan {
+    font-size: 31px;
+    color: #404041;
+    width: 28px;
+    height: 22px;
+    margin: 0 auto 13px;
+}
+
+.quick-actions-box .quick-actions-section .sr-bill-of-materials {
+    font-size: 26px;
+    color: #404041;
+    width: 21px;
+    height: 27px;
+    margin: 0 auto 13px;
+}
+
+.quick-actions-box .quick-actions-section .sr-products {
+    font-size: 24px;
+    color: #000;
+    width: 20px;
+    height: 27px;
+    margin: 0 auto 13px;
+}
+
+.quick-actions-box .quick-actions-section .sr-repair-quotes {
+    font-size: 27px;
+    color: #333;
+    width: 27px;
+    height: 25px;
+    margin: 0 auto 13px;
+}
+
+.quick-actions-box .quick-actions-section .sr-locator {
+    font-size: 25px;
+    color: #000;
+    width: 23px;
+    height: 25px;
+    margin: 0 auto 13px;
+}
+
+.quick-actions-box .quick-actions-section .sr-literature-library {
+    font-size: 24px;
+    color: #333;
+    width: 24px;
+    height: 20px;
+    margin: 0 auto 13px;
+}
+
+.product-details-2nd-section {}
+
+
+/*Overview Component Ends*/

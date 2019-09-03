@@ -1,0 +1,94 @@
+/*Sticky bar*/
+
+// Convert Below css code in SCSS
+// Store colors in _colors.scss file in assets/styles/ folder
+// Store fonts in _fonts.scss file in assets/styles/ folder
+// Store global css like generic padding value, font size, generic margin value in _global.scss
+.navs {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-weight: 600;
+    height: 56px;
+    -ms-overflow-style: scrollbar;
+    background-color: #fff;
+    padding: 0;
+    top: 40px;
+    z-index: 9999;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+@media (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
+    .navs {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) and (orientation:portrait) {
+    .navs {
+        display: none;
+    }
+}
+
+@media (max-width:991px) {
+    .navs {
+        display: none;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navs a {
+    font-family: Barlow-Regular;
+    color: #6d6e71;
+    font-size: 16px;
+    line-height: 20px;
+    border: 0;
+    margin-right: 0;
+    padding: 18px;
+    line-height: 24px;
+    white-space: nowrap;
+    text-decoration: none;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-transform: capitalize;
+}
+
+.navs a.current {
+    font-family: Barlow-Bold;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #cd163f;
+    cursor: default;
+    background-color: #fff;
+    border-bottom: 2px solid #cd163f;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    margin-right: 0;
+    white-space: nowrap;
+    padding: 17px 16px 19px;
+}
+
+main {
+    padding-bottom: 1rem;
+}
+
+#section1 {
+    padding-top: 56px;
+}
+
+#section2 {
+    padding-top: 80px;
+}

@@ -1,0 +1,13 @@
+<nav class="navs" id="spec-sticky-header">
+    <a href="#section1" [ngClass]="{'current': specificationtab}" (click)="$event.preventDefault();scrollTo('#section1')">Specifications</a>
+    <a href="#section2" [ngClass]="{'current': !specificationtab}" (click)="$event.preventDefault();scrollTo('#section2')">Documentation</a>
+</nav>
+<!-- <div class="content" appStickyHeader [isContent]="'true'"> </div> -->
+<main class="container" id="containerContent">
+    <section id="section1">
+        <app-pdp-specification-tab></app-pdp-specification-tab>
+    </section>
+    <section id="section2">
+        <app-pdp-documentation-tab></app-pdp-documentation-tab>
+    </section>
+</main>

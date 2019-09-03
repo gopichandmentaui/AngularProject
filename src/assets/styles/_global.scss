@@ -1,0 +1,552 @@
+/*Global scss starts*/
+
+@import "fonts";
+@import "svg-fonts";
+
+
+// Convert Below css code in SCSS
+// Store colors in _colors.scss file in assets/styles/ folder
+// Store fonts in _fonts.scss file in assets/styles/ folder
+// Store global css like generic padding value, font size, generic margin value, overrides in _global.scss
+
+.div-scroll {
+    overflow-x: hidden;
+}
+
+.pagination>li:first-child>a,
+.pagination>li:first-child>span {
+    border: 0 !important;
+    border-radius: 0 !important;
+    vertical-align: middle;
+    padding-right: 21px;
+}
+
+@media (max-width:767px) {
+
+    .pagination>li:last-child>a,
+    .pagination>li:last-child>span {
+        border: 0 !important;
+        border-radius: 0 !important;
+        vertical-align: middle;
+        padding-left: 0px;
+    }
+}
+
+.pagination>li:last-child>a,
+.pagination>li:last-child>span {
+    border: 0 !important;
+    border-radius: 0 !important;
+    vertical-align: middle;
+    padding-left: 21px;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: rgba(85, 85, 85, .85);
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.page-link:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.pagination>.disabled>a,
+.pagination>.disabled>a:focus,
+.pagination>.disabled>a:hover,
+.pagination>.disabled>span,
+.pagination>.disabled>span:focus,
+.pagination>.disabled>span:hover {
+    color: #ccc !important;
+    cursor: not-allowed;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+    z-index: 3;
+    color: rgba(85, 85, 85, .85);
+    cursor: default;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
+    background-color: transparent !important;
+}
+
+.tab-content {
+    border: 0px solid #ddd;
+}
+
+
+/*Accordion Styles*/
+
+.card {
+    border: 0;
+}
+
+.panel {
+    box-shadow: none;
+}
+
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #ffffff;
+    border-radius: 0;
+    box-shadow: none;
+    border: 0;
+    padding: 0;
+}
+
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+    border: 0;
+}
+
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+    border: 0;
+    padding-left: 0;
+}
+
+.accordion-toggle[aria-expanded="true"]:before {
+    content: "\e025";
+    font-size: 24px;
+    color: #404041 !important;
+    float: right;
+    font-family: "svgrockwell" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.accordion-toggle[aria-expanded="false"]:before {
+    content: "\e022";
+    font-size: 24px;
+    color: #404041 !important;
+    float: right;
+    font-family: "svgrockwell" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.btn-link {
+    font-family: Barlow-Light;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 48px;
+    letter-spacing: .5px;
+    color: #333 !important;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    padding: 0;
+}
+
+
+/*Accordion  End*/
+
+body {
+    font-family: 'Barlow-Regular';
+    font-size: 16px;
+}
+
+.pdp-wrapper-b4 {
+    margin-top: 129px;
+}
+
+@media (max-width:1024px) {
+    .pdp-wrapper-b4 {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width:767px) {
+    .pdp-wrapper-b4 {
+        padding-left: 20px;
+        padding-right: 20px;
+        /*        border: 1px solid red;*/
+    }
+}
+
+
+/*Global css Ends*/
+
+
+/*@import "src/assets/css/rockwell.min.css";*/
+
+
+/* You can add global styles to this file, and also import other style files */
+
+
+/*Global Navigation CSS fixings with Bootstrap4 styles conflicts*/
+
+#nav .navbar,
+#nav .container {
+    display: block;
+}
+
+#nav {
+    padding-top: 0;
+}
+
+@media (max-width: 992px) {
+
+    #RA_brandbar-row+#nav-container,
+    .brandbar-fixed-top+#nav-container {
+        height: auto !important;
+        top: 0;
+    }
+
+    #nav-mobile.navbar {
+        background-color: transparent;
+        height: auto;
+        padding: 0;
+    }
+
+    .navbar-menu.open {
+        height: auto;
+    }
+}
+
+@media (max-width:1024px) {
+    #nav-mobile .container {
+        max-width: 100%;
+    }
+}
+
+@media (min-width:768px) and (orientation:portrait) {
+    #nav-mobile #mobile-menu {
+        height: auto !important;
+    }
+}
+
+@media (max-width:991px) {
+
+    .pdp-wrapper-b4 .container,
+    .container-fluid {
+        padding-left: 0px;
+        padding-right: 0px;
+        /*        border: 1px solid blue;*/
+    }
+}
+
+@media (max-width: 767px) {
+    #nav-mobile .container {
+        overflow-x: hidden;
+    }
+}
+
+#nav-mobile .navbar-menu {
+    right: 0;
+    height: 360px !important;
+}
+
+@media (max-width: 767px) and (orientation:landscape) {
+    #nav-mobile #mobile-menu {
+        height: 360px !important;
+    }
+}
+
+@media (max-width: 767px) and (orientation:portrait) {
+    #nav-mobile #mobile-menu {
+        height: auto !important;
+    }
+}
+
+.ngx-gallery-image-wrapper {
+    z-index: 000 !important;
+}
+
+@media (min-width:1200px) {
+    .product-details-1st-section {
+        padding-right: 79px;
+    }
+}
+
+.product-details-2nd-section {
+    margin-top: 80px;
+}
+
+@media (max-width:1024px) {
+    .product-details-2nd-section {
+        margin-top: 56px;
+    }
+}
+
+@media (min-width:320px) and (max-width:991px) {
+    .pdp-wrapper-b4 .order-container {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .pdp-wrapper-b4 .second-col {
+        order: 2;
+    }
+
+    .pdp-wrapper-b4 .first-col {
+        order: 1;
+    }
+}
+
+.ngx-gallery-thumbnail.ngx-gallery-active {
+    border: 1px solid #404041;
+    opacity: 1;
+}
+
+.ngx-gallery-thumbnail {
+    padding: 1px;
+    border: 1px solid #dbdbdb;
+    opacity: .7 !important;
+}
+
+.ngx-gallery-thumbnails {
+    /*
+    max-width: 78% !important;
+    left: 10% !important;
+    overflow: hidden;
+*/
+    margin-left: calc(54% - 170px) !important;
+    max-width: 300px !important;
+    overflow: hidden;
+}
+
+@media (min-width:768px) and (orientation:portrait) {
+    .ngx-gallery-thumbnails {
+        margin-left: calc(46% - 200px) !important;
+        max-width: 300px !important;
+    }
+}
+
+.ngx-gallery-thumbnail-size-cover .ngx-gallery-thumbnails .ngx-gallery-thumbnail {
+    background-size: 40px 40px;
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.ngx-gallery-thumbnails-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    /*    background-color: rebeccapurple;*/
+    padding-top: 14px;
+}
+
+@media (max-width:991px) {
+    .ngx-gallery-thumbnails-wrapper {
+        padding-top: 12px;
+        height: 64px !important;
+    }
+}
+
+
+/*
+ngx-gallery /deep/ ngx-gallery-image .ngx-gallery-arrow {
+    display: none !important;
+}
+*/
+
+.ngx-gallery-icon .ngx-gallery-icon-content {
+    color: #162a36 !important;
+}
+
+@media (max-width:800px) {
+    .ngx-gallery-arrow {
+        top: 79% !important;
+    }
+
+    /*
+    .ngx-gallery-arrow-left .ngx-gallery-arrow {
+        left: auto !important;
+    }
+    .ngx-gallery-arrow-right .ngx-gallery-arrow {
+        right: auto !important;
+    }
+*/
+}
+
+.ngx-gallery-no-thumbnails .ngx-gallery-thumbnails {
+    display: none !important;
+}
+
+.ngx-gallery-no-thumbnails {
+    margin-bottom: -100px;
+}
+
+.ngx-gallery-arrow-wrapper {
+    z-index: 000 !important;
+}
+
+.product-details-1st-section .quick-actions-box .quick-actions-section .card:hover {
+    border-bottom: 2px solid #8c1a19;
+    background-color: #f1f1f2;
+    padding-top: 16px;
+}
+
+.product-details-1st-section .quick-actions-box .quick-actions-section .card a:hover {
+    color: #404041;
+    text-decoration: none;
+}
+
+.product-details-1st-section .quick-actions-box .quick-actions-section .card:focus {
+    border: 2px solid #8c1a19;
+    padding-top: 16px;
+}
+
+
+/* Accordion Styles*/
+
+/*custom Select*/
+.icon1 {
+    position: absolute;
+
+}
+
+.styled-select {
+    border: none;
+    box-sizing: border-box;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 40px;
+    letter-spacing: normal;
+    left: 0px;
+}
+
+@media (max-width:767px) {
+    .styled-select {
+        left: 22px;
+    }
+}
+
+
+select option:hover,
+select option:focus,
+select option:active {
+    background: linear-gradient(#f1f1f2, #f1f1f2);
+    background-color: #000000 !important;
+    /* for IE */
+    color: #404041 !important;
+}
+
+select option:checked {
+    background: linear-gradient(#f1f1f2, #f1f1f2);
+    background-color: #f1f1f2 !important;
+    /* for IE */
+    color: #404041 !important;
+}
+
+.styled-select,
+.styled-select select {
+    width: 100%;
+    max-width: 100%;
+    line-height: 40px;
+}
+
+@media (max-width:767px) {
+
+    .styled-select,
+    .styled-select select {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* .dropdown-custom{
+        margin-bottom: 32px;
+    } */
+}
+
+option {
+    /* wrap text in compatible browsers */
+    height: 32px;
+    -moz-white-space: pre-wrap;
+    -o-white-space: pre-wrap;
+    white-space: pre-wrap;
+    /* hide text that can't wrap with an ellipsis */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* add border after every option */
+    /* border-bottom: 1px solid #DDD; */
+
+}
+
+select:focus {
+    outline: none;
+    border: none;
+}
+
+.styled-select select {
+    color: #6f6d6d;
+    height: 40px;
+    padding: 0px 0 0px 5px;
+    background: transparent;
+    border: none;
+    /*hide default down arrow in webkit */
+    -webkit-appearance: none;
+}
+
+@-moz-document url-prefix() {
+    .styled-select select {
+        width: 110%;
+    }
+}
+
+.fa-sort-desc {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background-color: #ffffff;
+    font-size: 17px !important;
+    /* color: #000000 !important; */
+    height: 16px;
+    width: 16px;
+}
+
+@media (max-width:767px) {
+    .fa-sort-desc {
+        position: absolute;
+        top: 0;
+        right: 31px;
+        background-color: #ffffff;
+        font-size: 17px !important;
+        color: #000000 !important;
+    }
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+/* hide default down arrow in IE10*/
+/* hack to fall back in opera */
+_:-o-prefocus,
+.selector {
+    .styled-select {
+        background: none;
+    }
+}

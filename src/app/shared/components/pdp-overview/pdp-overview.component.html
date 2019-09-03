@@ -1,0 +1,114 @@
+<!--                    <p>right section</p>-->
+<div *ngIf="(overviewDetails$ | async) as OverviewDetails else loading">
+    <div *ngFor="let overviewsinfo of OverviewDetails">
+        <div class="catelog-number">{{overviewsinfo.catelognumber}}</div>
+        <div class="lower-category">{{overviewsinfo.lowercategory}}</div>
+        <div class="short-description">{{overviewsinfo.shortdescription}}
+        </div>
+    </div>
+</div>
+<ng-template #loading>
+    <div>Loading...</div>
+</ng-template>
+
+
+
+<!-- Lifecycle Status start here -->
+<div class="row lifecycle-title">
+    <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12 lifecycle-text lifecycle-text-width">
+        <label class="lifecycle-status">Lifecycle Status:</label> <span class="lifecycle-status-circle-position">
+            <i class="fa fa-circle lifecycle-status-circle" aria-hidden="true"></i>
+        </span> <span class="lifecycle-status-text"
+            *ngFor="let overviewsinfo of OverviewDetails">{{overviewsinfo.lifecyclestatustext}}
+        </span>
+    </div>
+</div>
+<!-- Lifecycle Status end here -->
+
+<!--
+    <div class="row quicklinks-box">
+        <div class="col-xs-12">
+
+            <div class="quick-links-text">Quick Actions</div>
+            <div class="quick-links-section">
+                <a class="col-sm-6 col-md-4 col-lg-4 rectangle-box" href="javascript:void(0)" id="document-link">
+                    <span class="sr-literature-library document-link"></span>
+                    <span class="text-links document-link">Product Documentation</span></a>
+                <a class="col-sm-6 col-md-4 col-lg-4 rectangle-box register-product-button" href="#">
+                    <span class="sr-scan"></span>
+                    <span class="text-links">Register this Product</span></a>
+                <a class="col-sm-6 col-md-4 col-lg-4 rectangle-box add-to-bom-button" href="#">
+                    <span class="icon sr-bill-of-materials"></span>
+                    <span class="text-links">Add to BoM</span>
+                </a>
+                <a class="col-sm-6 col-md-4 col-lg-4 rectangle-box configure-product-button" href="#">
+                    <span class="sr-products"></span>
+                    <span class="text-links">Configure Product</span>
+                </a>
+
+                <a class="col-sm-6 col-md-4 col-lg-4 rectangle-box add-to-repaire-quote-button" href="#">
+                    <span class="sr-repair-quotes"></span>
+                    <span class="text-links">Add to Repair Quote</span>
+                </a>
+
+                <a class="col-sm-6 col-md-4 col-lg-4 rectangle-box find-a-local-distributor-button" href="#">
+                    <span class="sr-locator"></span>
+                    <span class="text-links">Find a Local Distributor</span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+-->
+
+<div class="row quick-actions-box">
+    <div class="col-12 heading">Quick Actions</div>
+    <div class="col-6 col-sm-6 col-md-4 col-lg-4 quick-actions-section">
+        <a href="#" class="card" (click)="$event.preventDefault();scrollToDescription()">
+            <div class="card-body text-center">
+                <span class="sr-literature-library document-link"></span>
+                <span class="card-footer-text document-link">Product Documentation</span>
+            </div>
+        </a>
+    </div>
+    <div class="col-6 col-sm-6 col-md-4 col-lg-4 quick-actions-section">
+        <a href="#" class="card">
+            <div class="card-body text-center">
+                <span class="sr-scan"></span>
+                <span class="card-footer-text">Register this Product</span>
+            </div>
+        </a>
+    </div>
+    <div class="col-6 col-sm-6 col-md-4 col-lg-4 quick-actions-section">
+        <a href="#" class="card">
+            <div class="card-body text-center">
+                <span class="icon sr-bill-of-materials"></span>
+                <span class="card-footer-text">Add to BoM</span>
+            </div>
+        </a>
+    </div>
+    <div class="col-6 col-sm-6 col-md-4 col-lg-4 quick-actions-section">
+        <a href="#" class="card">
+            <div class="card-body text-center">
+                <span class="sr-products"></span>
+                <span class="card-footer-text">Configure Product</span>
+            </div>
+        </a>
+    </div>
+    <div class="col-6 col-sm-6 col-md-4 col-lg-4 quick-actions-section">
+        <a href="#" class="card">
+            <div class="card-body text-center">
+                <span class="sr-repair-quotes"></span>
+                <span class="card-footer-text">Add to Repair Quote</span>
+            </div>
+        </a>
+    </div>
+    <div class="col-6 col-sm-6 col-md-4 col-lg-4 quick-actions-section">
+        <a href="#" class="card">
+            <div class="card-body text-center">
+                <span class="sr-locator"></span>
+                <span class="card-footer-text">Find a Local Distributor</span>
+            </div>
+        </a>
+    </div>
+</div>

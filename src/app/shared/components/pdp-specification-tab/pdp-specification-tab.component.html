@@ -1,0 +1,53 @@
+<div>
+    <!-- <br/> -->
+    <!-- <div>pdp-specification-tab works!</div> -->
+    <!-- <br/> -->
+    <accordion>
+        <accordion-group heading="Specifications" [isOpen]="isFirstOpen">
+            <div class="container-fluid pl-0 pr-0" *ngIf="(specificationDetails$ | async) as specificationDetails else loading">
+                <div class="row" *ngFor="let specificationDetail of specificationDetails">
+                    <div class="col-md-12">
+                        <h4 class="tab-heading">{{specificationDetail.groupName}}</h4>
+                        <div class="row technical-specification-content" *ngFor="let dataItem of specificationDetail.dataGroups.slice(0, 8); let i=index">
+                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 feature-name">{{dataItem.subHeading}}
+                            </div>
+                            <!-- end col -->
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 feature-value">
+                                <ul class="list-group">
+                                    <li *ngFor="let descriptionItem of dataItem.description" class="list-group-item">{{descriptionItem}}</li>
+                                </ul>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <ng-container *ngIf="show">
+                            <div class="row technical-specification-content" *ngFor="let dataItem of specificationDetail.dataGroups.slice(9,end); let i=index">
+                                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 feature-name">{{dataItem.subHeading}}
+                                </div>
+                                <!-- end col -->
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 feature-value">
+                                    <ul class="list-group">
+                                        <li *ngFor="let descriptionItem of dataItem.description" class="list-group-item">{{descriptionItem}}</li>
+                                    </ul>
+                                </div>
+                                <!-- end col -->
+
+                            </div>
+                        </ng-container>
+                        <a href="#" (click)="$event.preventDefault();toggle()" id="bt{{index}}">
+                            {{readMore}}
+                        </a>
+                        <div class="hr-line"></div>
+
+                    </div>
+                </div>
+
+            </div>
+            <ng-template #loading>
+                <div>Loading...</div>
+            </ng-template>
+
+        </accordion-group>
+
+    </accordion>
+
+</div>

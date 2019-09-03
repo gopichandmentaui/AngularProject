@@ -1,0 +1,112 @@
+[
+
+    {
+        "groupName": "Technical Specification",
+        "dataGroups": [{
+                "subHeading": "Descripton",
+                "description": ["Stratix 8000 managed switch, Layers 2, 6 ports"]
+            },
+            {
+                "subHeading": "Inrush current, max",
+                "description": ["2.0 A"]
+            },
+            {
+                "subHeading": "Power input, max",
+                "description": ["2 A max @ 18…60V DC, CL 2/SELV"]
+            },
+            {
+                "subHeading": "Alarm relay, max",
+                "description": ["1 A max @ 30V DC, CL 2/SELV"]
+            },
+            {
+                "subHeading": "Isolation voltage",
+                "description": [
+                    "75V (continuous), basic insulation type, power to ground, power to netowrk channels, and power to alarm",
+                    "No isolation between individual Ethernet ports",
+                    "No isolation between console port and system",
+                    "Type tested at 1000V AC for 60 s"
+                ]
+            },
+            {
+                "subHeading": "Wire size, Ethernet connection",
+                "description": ["RJ45 connector according to IEC 60606-7, 2- or 4-pair Category 5e minimum cable according to TIA 568-B.1 or Category 5 cable according to ISO/IEC 24702"]
+            },
+            {
+                "subHeading": "Wire size, DC power and alarm connections",
+                "description": ["0.5…0.8mm (20…18 AWG) solid or stranded copper wire rated at 90° C (194° F) or greater, 1.2 mm (3/64 in.) insulation max"]
+            },
+            {
+                "subHeading": "Wire size, ground connection",
+                "description": ["3.3…5.3mm (12…10AWG) solid or stranded copper wire rated at 75° C (167° F) or greater"]
+            },
+            {
+                "subHeading": "Screw torque, power and alarm terminals",
+                "description": ["0.23 N•m (2.0 in•lb)"]
+            },
+            {
+                "subHeading": "Wiring category",
+                "description": ["2 - on alarm ports",
+                    "2 - on power ports",
+                    "2 - on Ethernet ports"
+                ]
+            },
+            {
+                "subHeading": "Pilot duty rating",
+                "description": ["Not rated"]
+            },
+            {
+                "subHeading": "North American temp code",
+                "description": ["T4"]
+            },
+            {
+                "subHeading": "IEC temp code",
+                "description": ["T4"]
+            },
+            {
+                "subHeading": "SFP modules",
+                "description": ["1783-SFP100FX, 1783-SFP100LX, 1783-SFP100EXC, 1783-SFP100ZXC, 1783-SFP100T, 1783-SFP1GSX, 1783-SFP1GLX, 1783-SFP1GEXE, 1783-SFP1GZX, 1783-SFP1GTE"]
+            },
+            {
+                "subHeading": "Memory card",
+                "description": ["1783-MCF"]
+            }
+        ]
+    },
+    {
+        "groupName": "Environmental Specifications",
+        "dataGroups": [{
+                "subHeading": "Descripton",
+                "description": ["Stratix 8000 managed switch, Layers 2, 6 ports"]
+            },
+            {
+                "subHeading": "Inrush current, max",
+                "description": ["2.0 A"]
+            },
+            {
+                "subHeading": "Power input, max",
+                "description": ["2 A max @ 18…60V DC, CL 2/SELV"]
+            },
+            {
+                "subHeading": "Alarm relay, max",
+                "description": ["1 A max @ 30V DC, CL 2/SELV"]
+            },
+            {
+                "subHeading": "Power consumption, max",
+                "description": ["15.1 W"]
+            },
+            {
+                "subHeading": "Power dissipation",
+                "description": ["15.1 W"]
+            },
+            {
+                "subHeading": "Isolation voltage",
+                "description": [
+                    "75V (continuous), basic insulation type, power to ground, power to netowrk channels, and power to alarm",
+                    "No isolation between individual Ethernet ports",
+                    "No isolation between console port and system",
+                    "Type tested at 1000V AC for 60 s"
+                ]
+            }
+        ]
+    }
+]

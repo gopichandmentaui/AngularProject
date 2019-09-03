@@ -1,0 +1,1063 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'svgrockwell';
+    src: url('http://www.rockwellautomation.com/resources/assets/icons/svgrockwell/svgrockwell.eot?dcp78v');
+    src: url('http://www.rockwellautomation.com/resources/assets/icons/svgrockwell/svgrockwell.eot?dcp78v#iefix') format('embedded-opentype'),
+        url('http://www.rockwellautomation.com/resources/assets/icons/svgrockwell/svgrockwell.ttf?dcp78v') format('truetype'),
+        url('http://www.rockwellautomation.com/resources/assets/icons/svgrockwell/svgrockwell.woff?dcp78v') format('woff'),
+        url('http://www.rockwellautomation.com/resources/assets/icons/svgrockwell/svgrockwell.svg?dcp78v#svgrockwell') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+[data-icon]:before {
+    font-family: "svgrockwell" !important;
+    content: attr(data-icon);
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="sr-"]:before,
+[class*=" sr-"]:before {
+    font-family: "svgrockwell" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.sr-logo-ab:before {
+    content: "\a001";
+}
+
+.sr-logo-ra:before {
+    content: "\a000";
+}
+
+.sr-logo-rs:before {
+    content: "\a002";
+}
+
+.sr-azure:before {
+    content: "\b000";
+}
+
+.sr-twitter:before {
+    content: "\b001";
+}
+
+.sr-vk:before {
+    content: "\b002";
+}
+
+.sr-facebook:before {
+    content: "\b003";
+}
+
+.sr-flikr:before {
+    content: "\b004";
+}
+
+.sr-wechat:before {
+    content: "\b005";
+}
+
+.sr-weibo:before {
+    content: "\b006";
+}
+
+.sr-google:before {
+    content: "\b007";
+}
+
+.sr-google-plus:before {
+    content: "\b008";
+}
+
+.sr-xing:before {
+    content: "\b009";
+}
+
+.sr-yahoo:before {
+    content: "\b010";
+}
+
+.sr-linkedin:before {
+    content: "\b011";
+}
+
+.sr-youtube:before {
+    content: "\b012";
+}
+
+.sr-microsoft:before {
+    content: "\b013";
+}
+
+.sr-microsoft-powerbi:before {
+    content: "\b014";
+}
+
+.sr-orkut:before {
+    content: "\b015";
+}
+
+.sr-qzone:before {
+    content: "\b016";
+}
+
+.sr-renren:before {
+    content: "\b017";
+}
+
+.sr-slideshare:before {
+    content: "\b018";
+}
+
+.sr-tencent-weibo:before {
+    content: "\b019";
+}
+
+.sr-blog:before {
+    content: "\c000";
+}
+
+.sr-case-study:before {
+    content: "\c001";
+}
+
+.sr-event:before {
+    content: "\c002";
+}
+
+.sr-literature-library:before {
+    content: "\c004";
+}
+
+.sr-magazine:before {
+    content: "\c005";
+}
+
+.sr-products:before {
+    content: "\c006";
+}
+
+.sr-support:before {
+    content: "\c007";
+}
+
+.sr-pdf:before {
+    content: "\d000";
+}
+
+.sr-image:before {
+    content: "\d001";
+}
+
+.sr-audio:before {
+    content: "\d002";
+}
+
+.sr-training:before {
+    content: "\c008";
+}
+
+.sr-knowledgebase:before {
+    content: "\c009";
+}
+
+.sr-code:before {
+    content: "\d003";
+}
+
+.sr-search:before {
+    content: "\c010";
+}
+
+.sr-apps:before {
+    content: "\c011";
+}
+
+.sr-locator:before {
+    content: "\c014";
+}
+
+.sr-locator-filled:before {
+    content: "\c015";
+}
+
+.sr-user-filled:before {
+    content: "\e000";
+}
+
+.sr-share:before {
+    content: "\e001";
+}
+
+.sr-settings-filled:before {
+    content: "\e002";
+}
+
+.sr-settings:before {
+    content: "\e003";
+}
+
+.sr-country-filled:before {
+    content: "\e004";
+}
+
+.sr-country:before {
+    content: "\e005";
+}
+
+.sr-email:before {
+    content: "\e006";
+}
+
+.sr-feedback:before {
+    content: "\e007";
+}
+
+.sr-help:before {
+    content: "\e008";
+}
+
+.sr-help-circle-filled:before {
+    content: "\e010";
+}
+
+.sr-language:before {
+    content: "\e011";
+}
+
+.sr-language-filled:before {
+    content: "\e012";
+}
+
+.sr-logout:before {
+    content: "\e013";
+}
+
+.sr-map-pin:before {
+    content: "\e014";
+}
+
+.sr-print:before {
+    content: "\e015";
+}
+
+.sr-save:before {
+    content: "\e016";
+}
+
+.sr-saved:before {
+    content: "\e017";
+}
+
+.sr-chevron-double-left:before {
+    content: "\e019";
+}
+
+.sr-chevron-double-right:before {
+    content: "\e020";
+}
+
+.sr-chevron-double-up:before {
+    content: "\e021";
+}
+
+.sr-chevron-down:before {
+    content: "\e022";
+}
+
+.sr-chevron-left:before {
+    content: "\e023";
+}
+
+.sr-chevron-right:before {
+    content: "\e024";
+}
+
+.sr-chevron-up:before {
+    content: "\e025";
+}
+
+.sr-page:before {
+    content: "\d004";
+}
+
+.sr-video:before {
+    content: "\d005";
+}
+
+.sr-video-filled:before {
+    content: "\d006";
+}
+
+.sr-user:before {
+    content: "\e026";
+}
+
+.sr-chevron-double-down:before {
+    content: "\e018";
+}
+
+.sr-batch:before {
+    content: "\c017";
+}
+
+.sr-asset-management:before {
+    content: "\c018";
+}
+
+.sr-actionable-analytics:before {
+    content: "\c019";
+}
+
+.sr-info-driven-systems-solutions:before {
+    content: "\c020";
+}
+
+.sr-information-solutions:before {
+    content: "\c021";
+}
+
+.sr-collaborative-execution:before {
+    content: "\c022";
+}
+
+.sr-electrical-safety:before {
+    content: "\c023";
+}
+
+.sr-feed:before {
+    content: "\c025";
+}
+
+.sr-motor-control:before {
+    content: "\c026";
+}
+
+.sr-modernization:before {
+    content: "\c027";
+}
+
+.sr-machine-safety:before {
+    content: "\c028";
+}
+
+.sr-mac:before {
+    content: "\c029";
+}
+
+.sr-safety:before {
+    content: "\c030";
+}
+
+.sr-risk-management:before {
+    content: "\c031";
+}
+
+.sr-project-management:before {
+    content: "\c032";
+}
+
+.sr-products-solutions:before {
+    content: "\c033";
+}
+
+.sr-productivity:before {
+    content: "\c034";
+}
+
+.sr-process-safety:before {
+    content: "\c035";
+}
+
+.sr-optimization:before {
+    content: "\c036";
+}
+
+.sr-training-support:before {
+    content: "\c037";
+}
+
+.sr-systems:before {
+    content: "\c038";
+}
+
+.sr-operational-intelligence:before {
+    content: "\c039";
+}
+
+.sr-integrated-architecture:before {
+    content: "\c040";
+}
+
+.sr-network-products:before {
+    content: "\c043";
+}
+
+.sr-network-architecture:before {
+    content: "\c044";
+}
+
+.sr-safety-management:before {
+    content: "\c045";
+}
+
+.sr-failed:before {
+    content: "\e027";
+}
+
+.sr-failed-filled:before {
+    content: "\e028";
+}
+
+.sr-good:before {
+    content: "\e029";
+}
+
+.sr-good-filled:before {
+    content: "\e030";
+}
+
+.sr-solutions:before {
+    content: "\c046";
+}
+
+.sr-download:before {
+    content: "\e031";
+}
+
+.sr-copy:before {
+    content: "\e032";
+}
+
+.sr-delete:before {
+    content: "\e033";
+}
+
+.sr-folder:before {
+    content: "\e034";
+}
+
+.sr-flag:before {
+    content: "\e035";
+}
+
+.sr-export:before {
+    content: "\e036";
+}
+
+.sr-cancel:before {
+    content: "\e037";
+}
+
+.sr-history:before {
+    content: "\e038";
+}
+
+.sr-home:before {
+    content: "\e039";
+}
+
+.sr-import:before {
+    content: "\e040";
+}
+
+.sr-maximize:before {
+    content: "\e041";
+}
+
+.sr-merge:before {
+    content: "\e042";
+}
+
+.sr-minimize:before {
+    content: "\e043";
+}
+
+.sr-move:before {
+    content: "\e044";
+}
+
+.sr-zoom-in:before {
+    content: "\e045";
+}
+
+.sr-upload:before {
+    content: "\e046";
+}
+
+.sr-unlock:before {
+    content: "\e047";
+}
+
+.sr-tagged:before {
+    content: "\e048";
+}
+
+.sr-sort-ascending:before {
+    content: "\e049";
+}
+
+.sr-sort:before {
+    content: "\e050";
+}
+
+.sr-shopping-cart:before {
+    content: "\e051";
+}
+
+.sr-zoom-out:before {
+    content: "\e052";
+}
+
+.sr-users-filled:before {
+    content: "\e053";
+}
+
+.sr-add-team-member:before {
+    content: "\e054";
+}
+
+.sr-admin-user:before {
+    content: "\e055";
+}
+
+.sr-alarm:before {
+    content: "\e056";
+}
+
+.sr-alarm-server:before {
+    content: "\e057";
+}
+
+.sr-alarm-state:before {
+    content: "\e058";
+}
+
+.sr-bookmark:before {
+    content: "\e059";
+}
+
+.sr-card-view:before {
+    content: "\e060";
+}
+
+.sr-comment:before {
+    content: "\e061";
+}
+
+.sr-color:before {
+    content: "\e062";
+}
+
+.sr-collapse-all:before {
+    content: "\e063";
+}
+
+.sr-details:before {
+    content: "\e065";
+}
+
+.sr-fit-to-screen:before {
+    content: "\e066";
+}
+
+.sr-expand-all:before {
+    content: "\e067";
+}
+
+.sr-eject:before {
+    content: "\e068";
+}
+
+.sr-hand:before {
+    content: "\e069";
+}
+
+.sr-in-alarm-suppressed:before {
+    content: "\e070";
+}
+
+.sr-in-alarm-unack:before {
+    content: "\e071";
+}
+
+.sr-jog-forward:before {
+    content: "\e073";
+}
+
+.sr-jog-reverse:before {
+    content: "\e074";
+}
+
+.sr-hide:before {
+    content: "\e075";
+}
+
+.sr-horizontal-gauge:before {
+    content: "\e076";
+}
+
+.sr-layers:before {
+    content: "\e077";
+}
+
+.sr-list-view:before {
+    content: "\e078";
+}
+
+.sr-flip-card:before {
+    content: "\e079";
+}
+
+.sr-in-alarm-ack:before {
+    content: "\e080";
+}
+
+.sr-in-alarm-ack-shelved:before {
+    content: "\e081";
+}
+
+.sr-in-alarm-ack-suppressed:before {
+    content: "\e082";
+}
+
+.sr-in-alarm-shelved:before {
+    content: "\e083";
+}
+
+.sr-pause:before {
+    content: "\e084";
+}
+
+.sr-password:before {
+    content: "\e085";
+}
+
+.sr-override:before {
+    content: "\e086";
+}
+
+.sr-normal-unack:before {
+    content: "\e087";
+}
+
+.sr-normal-suppressed:before {
+    content: "\e088";
+}
+
+.sr-normal-shelved:before {
+    content: "\e089";
+}
+
+.sr-normal-ack-suppressed:before {
+    content: "\e090";
+}
+
+.sr-normal-ack-shelved:before {
+    content: "\e091";
+}
+
+.sr-normal-ack:before {
+    content: "\e092";
+}
+
+.sr-no-attachments:before {
+    content: "\e093";
+}
+
+.sr-public:before {
+    content: "\e094";
+}
+
+.sr-properties:before {
+    content: "\e095";
+}
+
+.sr-vertical-meter:before {
+    content: "\e096";
+}
+
+.sr-activations:before {
+    content: "\c048";
+}
+
+.sr-hmi:before {
+    content: "\c049";
+}
+
+.sr-rehost:before {
+    content: "\c050";
+}
+
+.sr-add:before {
+    content: "\e097";
+}
+
+.sr-edit:before {
+    content: "\e098";
+}
+
+.sr-help-circle:before {
+    content: "\e009";
+}
+
+.sr-incident:before {
+    content: "\e099";
+}
+
+.sr-new:before {
+    content: "\e100";
+}
+
+.sr-project:before {
+    content: "\e101";
+}
+
+.sr-undo:before {
+    content: "\e102";
+}
+
+.sr-filters:before {
+    content: "\e103";
+}
+
+.sr-flag-filled:before {
+    content: "\e104";
+}
+
+.sr-reviews:before {
+    content: "\e105";
+}
+
+.sr-phone:before {
+    content: "\e106";
+}
+
+.sr-star:before {
+    content: "\e107";
+}
+
+.sr-star-filled:before {
+    content: "\e108";
+}
+
+.sr-my-rok:before {
+    content: "\b020";
+}
+
+.sr-rok:before {
+    content: "\b021";
+}
+
+.sr-ab:before {
+    content: "\b022";
+}
+
+.sr-missing-icon:before {
+    content: "\e109";
+}
+
+.sr-software-subscriptions:before {
+    content: "\c052";
+}
+
+.sr-minus:before {
+    content: "\e111";
+}
+
+.sr-star-half:before {
+    content: "\e112";
+}
+
+.sr-evaluate:before {
+    content: "\e113";
+}
+
+.sr-caret-down:before {
+    content: "\e114";
+}
+
+.sr-caret-left:before {
+    content: "\e115";
+}
+
+.sr-caret-right:before {
+    content: "\e116";
+}
+
+.sr-caret-up:before {
+    content: "\e117";
+}
+
+.sr-data-discovery:before {
+    content: "\c054";
+}
+
+.sr-machine-learning:before {
+    content: "\c055";
+}
+
+.sr-maintenance-mode:before {
+    content: "\e118";
+}
+
+.sr-maintenance-required:before {
+    content: "\e119";
+}
+
+.sr-out-of-specification:before {
+    content: "\e120";
+}
+
+.sr-priority-urgent:before {
+    content: "\e121";
+}
+
+.sr-priority-medium:before {
+    content: "\e122";
+}
+
+.sr-priority-low:before {
+    content: "\e123";
+}
+
+.sr-priority-high:before {
+    content: "\e124";
+}
+
+.sr-shelve:before {
+    content: "\e125";
+}
+
+.sr-check-function:before {
+    content: "\e126";
+}
+
+.sr-pcdc:before {
+    content: "\c056";
+}
+
+.sr-filters-off:before {
+    content: "\e127";
+}
+
+.sr-automation-fair:before {
+    content: "\b023";
+}
+
+.sr-news:before {
+    content: "\c057";
+}
+
+.sr-product-standards:before {
+    content: "\c058";
+}
+
+.sr-chevron-first:before {
+    content: "\e128";
+}
+
+.sr-chevron-last:before {
+    content: "\e129";
+}
+
+.sr-faq:before {
+    content: "\e130";
+}
+
+.sr-information-circle-filled:before {
+    content: "\e131";
+}
+
+.sr-file-doc:before {
+    content: "\d007";
+}
+
+.sr-file-docx:before {
+    content: "\d008";
+}
+
+.sr-file-gif:before {
+    content: "\d009";
+}
+
+.sr-file-htm:before {
+    content: "\d010";
+}
+
+.sr-file-html:before {
+    content: "\d011";
+}
+
+.sr-file-jpg:before {
+    content: "\d012";
+}
+
+.sr-file-pdf:before {
+    content: "\d013";
+}
+
+.sr-file-png:before {
+    content: "\d014";
+}
+
+.sr-file-pps:before {
+    content: "\d015";
+}
+
+.sr-file-ppsx:before {
+    content: "\d016";
+}
+
+.sr-file-ppt:before {
+    content: "\d017";
+}
+
+.sr-file-zip:before {
+    content: "\d018";
+}
+
+.sr-file-xml:before {
+    content: "\d019";
+}
+
+.sr-file-xlsx:before {
+    content: "\d020";
+}
+
+.sr-file-xls:before {
+    content: "\d021";
+}
+
+.sr-file-txt:before {
+    content: "\d022";
+}
+
+.sr-file-rtf:before {
+    content: "\d023";
+}
+
+.sr-file-rar:before {
+    content: "\d024";
+}
+
+.sr-file-pptx:before {
+    content: "\d025";
+}
+
+.sr-notifications:before {
+    content: "\e110";
+}
+
+.sr-notification-filled:before {
+    content: "\e132";
+}
+
+.sr-notification:before {
+    content: "\e133";
+}
+
+.sr-network-services:before {
+    content: "\c041";
+}
+
+.sr-security-services:before {
+    content: "\c042";
+}
+
+.sr-services:before {
+    content: "\c047";
+}
+
+.sr-ic-services:before {
+    content: "\61";
+}
+
+.sr-secure-user:before {
+    content: "\e134";
+}
+
+.sr-verify-sign-in:before {
+    content: "\e135";
+}
+
+.sr-verify-code:before {
+    content: "\e136";
+}
+
+.sr-user-company:before {
+    content: "\e137";
+}
+
+.sr-warranty:before {
+    content: "\e138";
+}
+
+.sr-more:before {
+    content: "\e139";
+}
+
+.sr-arrow-up:before {
+    content: "\e140";
+}
+
+.sr-arrow-right:before {
+    content: "\e141";
+}
+
+.sr-arrow-left:before {
+    content: "\e142";
+}
+
+.sr-arrow-down:before {
+    content: "\e143";
+}
+
+.sr-company:before {
+    content: "\e144";
+}
+
+.sr-scan:before {
+    content: "\e145";
+}
+
+.sr-essential-components:before {
+    content: "\c024";
+}
+
+.sr-contacts:before {
+    content: "\c013";
+}
+
+.sr-bill-of-materials:before {
+    content: "\c012";
+}
+
+.sr-equipment:before {
+    content: "\c053";
+}
+
+.sr-repair-quotes:before {
+    content: "\c051";
+}
+
+.sr-recent-activity:before {
+    content: "\c016";
+}

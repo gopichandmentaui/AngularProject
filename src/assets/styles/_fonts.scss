@@ -1,0 +1,42 @@
+/* Barlow v3 */
+
+@font-face {
+    font-family: 'Barlow-Light';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Barlow Light'), local('Barlow-Light'), url('http://www.rockwellautomation.com/resources/assets/fonts/barlow/Barlow-Light.woff2') format('woff2'), url('http://www.rockwellautomation.com/resources/assets/fonts/barlow/Barlow-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Barlow-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Barlow Regular'), local('Barlow-Regular'), url('http://www.rockwellautomation.com/resources/assets/fonts/barlow/Barlow-Regular.woff2') format('woff2'), url('http://www.rockwellautomation.com/resources/assets/fonts/barlow/Barlow-Regular.woff') format('woff');
+}
+
+
+/*
+@font-face {
+    font-family: 'Barlow-Medium';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Barlow Medium'), local('Barlow-Medium'), url('//www.rockwellautomation.com/resources/assets/fonts/barlow/Barlow-Medium.woff2') format('woff2'), url('//www.rockwellautomation.com/resources/assets/fonts/barlow/Barlow-Medium.woff') format('woff');
+}
+*/
+
+@font-face {
+    font-family: 'Barlow-Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Barlow Bold'), local('Barlow-Bold'), url('http://www.rockwellautomation.com/resources/assets/fonts/barlow/Barlow-Bold.woff2') format('woff2'), url('http://www.rockwellautomation.com/resources/assets/fonts/barlow/Barlow-Bold.woff') format('woff');
+}
+
+
+/* Barlow Condensed v3 */
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Barlow Condensed Regular'), local('BarlowCondensed-Regular'), url('http://www.rockwellautomation.com/resources/assets/fonts/barlow/BarlowCondensed-Regular.woff2') format('woff2'), url('http://www.rockwellautomation.com/resources/assets/fonts/barlow/BarlowCondensed-Regular.woff') format('woff');
+}
