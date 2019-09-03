@@ -1,7 +1,5 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
-import { Observable } from 'rxjs';
 import { DataBusService } from 'src/app/core/services/data-bus.service';
-import { trigger, transition, animate, style } from '@angular/animations';
 @Component({
   selector: 'app-pdp-specification-tab',
   templateUrl: './pdp-specification-tab.component.html',
@@ -9,25 +7,43 @@ import { trigger, transition, animate, style } from '@angular/animations';
 })
 export class PdpSpecificationTabComponent implements OnInit {
 
-  specificationDetails$: Observable<any>;
-  isFirstOpen = true;
-  public show:boolean = false;
-  public readMore:any = 'Show More';
-  
+  private _specificationDetails;
+  private _isFirstOpen = true;
+  private _show: Map<number, boolean> = new Map();
+  private defaultVisibleListCount: number = 5;
+
   constructor(private el: ElementRef, private data: DataBusService) { }
 
   ngOnInit() {
-    this.specificationDetails$ = this.data.getSpecificationsData();
+    this.data.getSpecificationsData().subscribe(
+      res => {
+        if (res.length > 0) {
+          this._specificationDetails = res;
+          this._specificationDetails.forEach((item, index) => {
+            this._show.set(index, false);
+          });
+        }
+      },
+      console.error
+    );
   }
-  toggle(index: number, div: string) {
-    this.show = !this.show;
-    
+  toggle(index: number) {
+    this._show.set(index, !this._show.get(index));
+  }
 
-    // CHANGE THE NAME OF THE BUTTON.
-    if(this.show)  
-      this.readMore = "Show Less";
-      
-    else
-      this.readMore = "Show More";
+  readMore(index: number) {
+    return this._show.get(index) ? "Show Less" : "Show More"
+  }
+
+  getShowCount(index: number, length: number) {
+    return this._show.get(index) ? length : this.defaultVisibleListCount;
+  }
+
+  get isFirstOpen() {
+    return this._isFirstOpen;
+  }
+
+  get specificationDetails() {
+    return this._specificationDetails;
   }
 }

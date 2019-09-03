@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { OVERVIEW_DATA_URL, SPECIFICATIONS_URL } from 'src/app/shared/constants/paths';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 /*
 * This is a Data Bus service, meant for retrieving/passing data in between components, located anywhere in the component tree
@@ -21,7 +23,7 @@ export class DataBusService {
     return this.http.get(OVERVIEW_DATA_URL);
   }
 
-  getSpecificationsData() {
+  getSpecificationsData(): Observable<any> {
     return this.http.get(SPECIFICATIONS_URL);
   }
 }
