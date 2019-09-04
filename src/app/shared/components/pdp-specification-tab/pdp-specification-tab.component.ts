@@ -15,6 +15,9 @@ export class PdpSpecificationTabComponent implements OnInit {
   constructor(private el: ElementRef, private data: DataBusService) { }
 
   ngOnInit() {
+    if (window.screen.width <= 991) { // 768px portrait
+      this._isFirstOpen = false;
+    }
     this.data.getSpecificationsData().subscribe(
       res => {
         if (res.length > 0) {
