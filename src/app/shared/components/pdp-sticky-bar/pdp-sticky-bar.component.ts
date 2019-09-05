@@ -10,8 +10,6 @@ export class PdpStickyBarComponent implements OnInit, AfterViewInit {
   mainNavLinks: any;
   mainSections: any;
   lastId: any;
-  // cur: any;
-  // topOffset: 1000;
   hasViewInit = false;
   private stickHeaderNav;
   specificationtab = true;
@@ -27,8 +25,6 @@ export class PdpStickyBarComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
-    // this.lastId;
-    // this.cur = [];
   }
 
   @HostListener("window:scroll", ["$event"])

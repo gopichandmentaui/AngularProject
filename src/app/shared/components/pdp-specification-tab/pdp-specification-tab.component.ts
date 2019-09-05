@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef, HostListener, NgZone } from '@angular/core';
 import { DataBusService } from 'src/app/core/services/data-bus.service';
 @Component({
   selector: 'app-pdp-specification-tab',
@@ -10,13 +10,25 @@ export class PdpSpecificationTabComponent implements OnInit {
   private _specificationDetails;
   private _isFirstOpen = true;
   private _show: Map<number, boolean> = new Map();
-  private defaultVisibleListCount: number = 5;
+  private defaultVisibleListCount: number = 10;
 
-  constructor(private el: ElementRef, private data: DataBusService) { }
+  constructor(private el: ElementRef, private data: DataBusService,private ngZone:NgZone) {
+    window.onresize = (e) =>
+    {
+        //ngZone.run will help to run change detection
+        this.ngZone.run(() => {
+            console.log("Width: " + window.innerWidth);
+            console.log("Height: " + window.innerHeight);
+        });
+    };
+   }
 
   ngOnInit() {
     if (window.screen.width <= 991) { // 768px portrait
       this._isFirstOpen = false;
+    }
+    else{
+      this._isFirstOpen = true;
     }
     this.data.getSpecificationsData().subscribe(
       res => {
@@ -49,4 +61,15 @@ export class PdpSpecificationTabComponent implements OnInit {
   get specificationDetails() {
     return this._specificationDetails;
   }
+
+//   @HostListener('window:resize')
+//   onResize(event) {
+
+//     const innerWidth = event.target.innerWidth;
+//     console.log(innerWidth);
+ 
+//     if (innerWidth <= 991) {
+//       this._isFirstOpen = false;
+//     }
+//  }
 }

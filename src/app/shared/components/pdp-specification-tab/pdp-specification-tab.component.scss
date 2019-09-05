@@ -2,63 +2,95 @@
 // Store colors in _colors.scss file in assets/styles/ folder
 // Store fonts in _fonts.scss file in assets/styles/ folder
 // Store global css like generic padding value, font size, generic margin value in _global.scss
-.list-group {
-    margin-bottom: 0;
-    border: 0;
-    border-radius: 0;
-    .list-group-item {
+.pdp-specification-wrapper {
+    .list-group {
+        margin-bottom: 0;
         border: 0;
         border-radius: 0;
-        padding-left: 0;
+        .list-group-item {
+            border: 0;
+            border-radius: 0;
+            padding-left: 0;
+            font-family: Barlow-Regular;
+            font-size: 16px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 22px;
+            letter-spacing: normal;
+            color: #404041;
+            margin-bottom: 8px;
+            padding-bottom: 0;
+            padding-top: 0px;
+            @media (max-width: 991px) {
+                padding-right: 0px;
+            }
+        }
+    }
+    .technical-specification-content {
+        padding-bottom: 16px;
+        @media (max-width: 767px) {
+            padding-bottom: 24px;
+        }
+    }
+    .feature-value {
+        padding-left: 0px;
+        @media (min-width: 320px) {
+            padding-left: 15px;
+        }
+    }
+    .feature-name {
         font-family: Barlow-Regular;
-        font-size: 16px;
+        font-size: 20px;
+        font-weight: 400;
         font-style: normal;
         font-stretch: normal;
-        line-height: 22px;
+        line-height: 28px;
         letter-spacing: normal;
-        color: #404041;
-        padding-top: 8px;
-        padding-bottom: 0;
-        padding-right: 0px;
+        color: #6d6e71;
+        padding-right: 16px;
+        @media (max-width: 767px) {
+            margin-bottom: 4px;
+        }
     }
-}
-
-.technical-specification-content {
-    padding-bottom: 16px;
-}
-
-.feature-value {
-    padding-left: 0px;
-}
-
-.feature-name {
-    font-family: Barlow-Regular;
-    font-size: 20px;
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 28px;
-    letter-spacing: normal;
-    color: #6d6e71;
-    padding-right: 16px;
-}
-
-.tab-heading {
-    font-family: Barlow-Bold;
-    margin-bottom: 32px;
-    margin-top: 0;
-    font-size: 20px;
-    font-weight: 700;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 32px;
-    letter-spacing: normal;
-    color: #333;
-}
-
-.hr-line {
-    height: 24px;
-    box-shadow: inset 0 -1px 0 0 #dbdbdb;
-    background-color: #fff;
-    margin-bottom: 32px;
+    .tab-heading {
+        font-family: Barlow-Bold;
+        margin-bottom: 32px;
+        margin-top: 0;
+        font-size: 20px;
+        font-weight: 700;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 32px;
+        letter-spacing: normal;
+        color: #333;
+    }
+    .read-more {
+        padding-left: 15px;
+        font-family: Barlow-Regular;
+        font-size: 18px;
+        font-weight: 400;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 24px;
+        letter-spacing: normal;
+        color: #015e81;
+        text-decoration: none;
+        display: block;
+        height: 100%;
+    }
+    .hr-line {
+        height: 24px;
+        box-shadow: inset 0 -1px 0 0 #dbdbdb;
+        background-color: #fff;
+        margin-bottom: 32px;
+        // border-bottom: 1px solid #dbdbdb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+        margin-left: 15px;
+        // &:nth-last-child(-n+2) {
+        //     box-shadow: none;
+        // }
+    }
 }

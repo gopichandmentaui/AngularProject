@@ -21,9 +21,9 @@
             {
                 "subHeading": "Isolation voltage",
                 "description": [
-                    "75V (continuous), basic insulation type, power to ground, power to netowrk channels, and power to alarm",
-                    "No isolation between individual Ethernet ports",
-                    "No isolation between console port and system",
+                    "75V (continuous), basic insulation type, power to ground, power to netowrk channels, and power to alarm.",
+                    "No isolation between individual Ethernet ports.",
+                    "No isolation between console port and system.",
                     "Type tested at 1000V AC for 60 s"
                 ]
             },
