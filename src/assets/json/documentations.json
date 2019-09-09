@@ -1,0 +1,37 @@
+[
+
+    {
+        "groupName": "Selection Guide",
+        "dataGroups": [{
+            "documentationName": "ControlLogix System Selection Guide",
+            "href": "https://literature.rockwellautomation.com/idc/groups/literature/documents/td/1783-td001_-en-p.pdf",
+            "documentationCode": ["1756-SG001"],
+            "downloads": ["download"]
+        }]
+    },
+    {
+        "groupName": "Technical Data",
+        "dataGroups": [{
+                "documentationName": "Stratix Ethernet Device Specifications",
+                "href": "https://literature.rockwellautomation.com/idc/groups/literature/documents/td/1783-td001_-en-p.pdf",
+                "documentationCode": ["1783-TD001"],
+                "downloads": ["download"]
+            },
+            {
+                "documentationName": "ControlLogix System Selection Guide",
+                "href": "https://literature.rockwellautomation.com/idc/groups/literature/documents/td/1783-td001_-en-p.pdf",
+                "documentationCode": ["1756-SG001"],
+                "downloads": ["download"]
+            }
+        ]
+    },
+    {
+        "groupName": "User Manual",
+        "dataGroups": [{
+            "documentationName": "Stratix 5100 Wireless Access Point/Workgroup Bridge",
+            "href": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/1783-um006_-en-p.pdf",
+            "documentationCode": ["1783-UM006"],
+            "downloads": ["download"]
+        }]
+    }
+]

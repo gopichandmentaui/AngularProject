@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { OVERVIEW_DATA_URL, SPECIFICATIONS_URL } from 'src/app/shared/constants/paths';
+import { OVERVIEW_DATA_URL, SPECIFICATIONS_URL,DOCUMENTATIONS_URL } from 'src/app/shared/constants/paths';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
@@ -25,5 +25,8 @@ export class DataBusService {
 
   getSpecificationsData(): Observable<any> {
     return this.http.get(SPECIFICATIONS_URL);
+  }
+  getDocumentationsData(): Observable<any> {
+    return this.http.get(DOCUMENTATIONS_URL);
   }
 }

@@ -2,9 +2,9 @@
     <!-- <br/> -->
     <!-- <div>pdp-specification-tab works!</div> -->
     <!-- <br/> -->
-    <accordion>
+    <accordion [isAnimated]="true">
         <accordion-group heading="Specifications" [isOpen]="isFirstOpen">
-            <div class="container-fluid pl-0 pr-0" *ngIf="specificationDetails else loading">
+            <div class="container-fluid pl-0 pr-0 panel-content" *ngIf="specificationDetails else loading">
                 <div class="row" *ngFor="let specificationDetail of specificationDetails; let index = index;">
                     <div class="col-md-12">
                         <h4 class="tab-heading">{{specificationDetail.groupName}}</h4>

@@ -6,6 +6,7 @@ import { Component, OnInit, HostListener, ElementRef, Renderer2, AfterViewInit }
   styleUrls: ['./pdp-sticky-bar.component.scss']
 })
 export class PdpStickyBarComponent implements OnInit, AfterViewInit {
+  [x: string]: any;
   stickyOffsetTop: any;
   mainNavLinks: any;
   mainSections: any;
@@ -56,7 +57,7 @@ export class PdpStickyBarComponent implements OnInit, AfterViewInit {
           this.mainNavLinks.forEach(link => {
             if (link.hash !== linkTop.hash) link.classList.remove('current')
           });
-         // console.log(this.mainNavLinks);
+          // console.log(this.mainNavLinks);
         }
       });
     }
@@ -65,8 +66,8 @@ export class PdpStickyBarComponent implements OnInit, AfterViewInit {
   scrollTo(id) {
     const section = this.el.nativeElement.querySelector(id);
     window.scrollTo(0, section.offsetTop - 144);
-    if(id == "#section1") {
-    this.specificationtab = true;
+    if (id == "#section1") {
+      this.specificationtab = true;
     } else {
       this.specificationtab = false;
     }

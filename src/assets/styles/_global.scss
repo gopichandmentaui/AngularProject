@@ -6,6 +6,16 @@
 // Store colors in _colors.scss file in assets/styles/ folder
 // Store fonts in _fonts.scss file in assets/styles/ folder
 // Store global css like generic padding value, font size, generic margin value, overrides in _global.scss
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Barlow-Regular';
+    font-size: 16px;
+}
+
 
 /*Accordion Styles*/
 
@@ -13,8 +23,15 @@
     border: 0;
 }
 
+#containerContent .card-body {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
 .panel {
     box-shadow: none;
+    border: 0;
 }
 
 .panel-default>.panel-heading {
@@ -87,13 +104,11 @@
 
 /*Accordion  End*/
 
-body {
-    font-family: 'Barlow-Regular';
-    font-size: 16px;
-}
-
 .pdp-wrapper-b4 {
     margin-top: 129px;
+    .panel-group {
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width:1024px) {
@@ -112,15 +127,6 @@ body {
 
 
 /*Global css Ends*/
-
-
-/*@import "src/assets/css/rockwell.min.css";*/
-
-
-/* You can add global styles to this file, and also import other style files */
-
-
-/*Global Navigation CSS fixings with Bootstrap4 styles conflicts*/
 
 #nav .navbar,
 #nav .container {
@@ -492,4 +498,11 @@ _:-o-prefocus,
 
 .scrollTop-Container {
     z-index: 99999;
+}
+
+// #section2 .panel-group .panel .panel-default .panel-heading {
+//     border-top: 0;
+// }
+#section1 .panel .panel-heading {
+    border-bottom: 0 !important;
 }

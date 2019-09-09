@@ -17,8 +17,14 @@ export class PdpSpecificationTabComponent implements OnInit {
     {
         //ngZone.run will help to run change detection
         this.ngZone.run(() => {
-            console.log("Width: " + window.innerWidth);
-            console.log("Height: " + window.innerHeight);
+            // console.log("Width: " + window.innerWidth);
+            // console.log("Height: " + window.innerHeight);
+            if (window.screen.width <= 991) { // 768px portrait
+              this._isFirstOpen = false;
+            }
+            else{
+              this._isFirstOpen = true;
+            }
         });
     };
    }
